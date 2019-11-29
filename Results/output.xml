@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.3 on win32)" generated="20191129 14:08:42.663" rpa="false">
+<suite id="s1" name="Location" source="C:\RobotFramework\Projects\Amazon\Tests\Location.robot">
+<test id="s1-t1" name="Lets do something">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://www.amazon.ca</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20191129 14:08:42.828" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.ca'.</msg>
+<status status="PASS" starttime="20191129 14:08:42.827" endtime="20191129 14:08:50.128"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Black Friday</arg>
+</arguments>
+<status status="PASS" starttime="20191129 14:08:50.129" endtime="20191129 14:08:50.392"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=twotabsearchtextbox</arg>
+<arg>Fujifilm X-pro2</arg>
+</arguments>
+<msg timestamp="20191129 14:08:50.393" level="INFO">Typing text 'Fujifilm X-pro2' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20191129 14:08:50.392" endtime="20191129 14:08:50.609"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input</arg>
+</arguments>
+<msg timestamp="20191129 14:08:50.610" level="INFO">Clicking button 'css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input'.</msg>
+<status status="PASS" starttime="20191129 14:08:50.610" endtime="20191129 14:08:51.419"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>results for "Fujifilm X-pro2"</arg>
+</arguments>
+<status status="PASS" starttime="20191129 14:08:51.419" endtime="20191129 14:08:51.837"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>partial link=Fujifilm X-Pro 2G/XF2</arg>
+</arguments>
+<msg timestamp="20191129 14:08:51.839" level="INFO">Clicking link 'partial link=Fujifilm X-Pro 2G/XF2'.</msg>
+<status status="PASS" starttime="20191129 14:08:51.838" endtime="20191129 14:08:53.890"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Fujifilm X-Pro 2G/XF23 Mirrorless Digital Camera</arg>
+</arguments>
+<status status="PASS" starttime="20191129 14:08:53.891" endtime="20191129 14:08:54.283"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>id=add-to-cart-button</arg>
+</arguments>
+<msg timestamp="20191129 14:08:54.284" level="INFO">Clicking link 'id=add-to-cart-button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20191129 14:08:55.099" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20191129 14:08:54.508" endtime="20191129 14:08:55.099"></status>
+</kw>
+<msg timestamp="20191129 14:08:55.101" level="FAIL">Link with locator 'id=add-to-cart-button' not found.</msg>
+<status status="FAIL" starttime="20191129 14:08:54.284" endtime="20191129 14:08:55.101"></status>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tags>
+<tag>Guns</tag>
+</tags>
+<status status="FAIL" starttime="20191129 14:08:42.826" endtime="20191129 14:08:55.102" critical="yes">Link with locator 'id=add-to-cart-button' not found.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20191129 14:08:42.664" endtime="20191129 14:08:55.104"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Guns</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Location">Location</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
