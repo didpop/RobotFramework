@@ -20,7 +20,7 @@ Lets do something
     Click Link  partial link=Fujifilm X-Pro 2G/XF2
     Wait until page contains  Fujifilm X-Pro 2G/XF23 Mirrorless Digital Camera
     Click button  name=submit.add-to-cart
-    Wait until page contains  Added to Cart
+    Wait until page contains  Cart subtotal
     Click button  css=#attach-sidesheet-checkout-button > span > input
     Sleep  3s
     Close Browser
