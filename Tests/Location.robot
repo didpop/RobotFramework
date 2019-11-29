@@ -19,8 +19,9 @@ Lets do something
     Wait until page contains  results for "Fujifilm X-pro2"
     Click Link  partial link=Fujifilm X-Pro 2G/XF2
     Wait until page contains  Fujifilm X-Pro 2G/XF23 Mirrorless Digital Camera
-    Click link  id=add-to-cart-button
+    Click button  name=submit.add-to-cart
     Wait until page contains  Added to Cart
+    Click button  css=#attach-sidesheet-checkout-button > span > input
     Sleep  3s
     Close Browser
 
