@@ -29,10 +29,50 @@ Syslog
 LDAP over SSL/TLS
 
 860 - TCP
-iSCSI
+iSCSI - server side
+
+3260 - TCP
+iSCSI target side listening port
 
 989-990 - TCP
 FTPS
 
 993 - TCP
 IMAP over SSL/TLS
+
+995 - TCP
+POP3 over SSL/TLS
+
+1433 - TCP
+MSSQL
+
+1645/1646 - UDP
+Radius
+
+1812/1813 - UDP
+Radius
+
+1701 - UDP
+L2TP
+underlying VPN protocol
+with no security
+
+1723 - TCP/UDP
+PPTP
+Point to Point Tunneling Protocol
+with built-in security
+
+3225 - TCP/UDP
+FCIP
+Fiber Channle IP
+
+3389 - TCP/UDP
+RDP
+
+3868 - TCP
+Diameter
+advanced Radious
+
+6514 - TCP
+Syslog over TLS
+
