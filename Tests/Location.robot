@@ -12,8 +12,9 @@ Library  SeleniumLibrary
 Lets do something
     [Documentation]  This is some basic info about the test
     [Tags]  Guns
+    Log  Logging some text here
     Open Browser  http://www.amazon.ca  chrome
-    Wait Until Page Contains  Black Friday
+    Wait Until Page Contains  Your Account
     Input Text  id=twotabsearchtextbox  Fujifilm X-pro2
     Click Button  css=#nav-search > form > div.nav-right > div > input
     Wait until page contains  results for "Fujifilm X-pro2"
@@ -24,7 +25,11 @@ Lets do something
     Click button  css=#attach-sidesheet-checkout-button > span > input
     Sleep  3s
     Close Browser
-
+Lets do something else
+    [Documentation]  This is some basic info about the second test
+    [Tags]  Pistols
+    Log  Logging some text here
+    Open Browser  http://www.google.ca  chrome
 
 
 *** Keywords ***
