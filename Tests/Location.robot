@@ -1,35 +1,26 @@
 *** Settings ***
 Documentation  This is some basic info about the whole suite
-Library  SeleniumLibrary
-
-# Copy/paste the line below into Terminal to execute:
-# robot -d results tests/amazon.robot
-
-*** Variables ***
-
+Resource  ../Resources/Amazon.robot
+Resource  ../Resources/Common.robot
+Suite Setup  Common.Insert testing data
+Test Setup  Common.Begin web test
+Test Teardown  Common.End web test
+Suite Teardown  Common.Cleanup testing data
+Resource  ../Resources/Common.robot
+Resource  ../Resources/Amazon.robot
 
 *** Test Cases ***
 Lets do something
     [Documentation]  This is some basic info about the test
     [Tags]  Guns
-    Log  Logging some text here
-    Open Browser  http://www.amazon.ca  chrome
-    Wait Until Page Contains  Your Account
-    Input Text  id=twotabsearchtextbox  Fujifilm X-pro2
-    Click Button  css=#nav-search > form > div.nav-right > div > input
-    Wait until page contains  results for "Fujifilm X-pro2"
-    Click Link  partial link=Fujifilm X-Pro 2G/XF2
-    Wait until page contains  Fujifilm X-Pro 2G/XF23 Mirrorless Digital Camera
-    Click button  name=submit.add-to-cart
-    Wait until page contains  Cart subtotal
-    Click button  css=#attach-sidesheet-checkout-button > span > input
-    Sleep  3s
-    Close Browser
-Lets do something else
-    [Documentation]  This is some basic info about the second test
-    [Tags]  Pistols
-    Log  Logging some text here
-    Open Browser  http://www.google.ca  chrome
+    Amazon.Search for
 
 
-*** Keywords ***
+Do next thing
+    [Documentation]  This is some basic info about the test
+    [Tags]  Guns
+    Amazon.Search for
+    # Amazon.Select profuct from search result
+    # Amazon.Add product to cart
+
+
